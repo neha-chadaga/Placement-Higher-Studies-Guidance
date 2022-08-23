@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Placement training</title>
+    <link type="text/css" rel="stylesheet" href="css1.css">
+</head>
+<body>
+    <img class="logo" src="bmscelogo.png" />
+    <div class="pbg">
+        <ul class="nav1">
+            <li><a href="HomePage.html">HOME</a></li>
+            <li><a href="HigherStudies.html">HIGHER STUDIES</a></li>
+            <li><a href="Placementpage.html">PLACEMENT</a></li>
+            <li><a href="Studymaterials.html">RESOURCES</a></li>
+            <li><a href="AboutUs.html">ABOUT</a></li>
+            <li style="float:right"><a href="loginpage.html">LOGOUT</a></li>
+        </ul>
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 5</div>
+                <img src="adobe.jpg" style="width:90%">
+                <div class="text">
+                    <button class="link1"><a href="https://www.adobe.com/careers.html">click here to know more</a></button>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 5</div>
+                <img src="Amazon.jpg" style="width:100%">
+                <div class="text">
+                    <button class="link1"><a href="https://www.amazon.jobs/en/">click here to know more</a></button>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 5</div>
+                <img src="google.jpg" style="width:100%">
+                <div class="text">
+                    <button class="link1"><a href="https://careers.google.com/">click here to know more</a></button>
+
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <img src="gs.jpeg" style="width:100%">
+                <div class="text">
+                    <button class="link1"><a href="https://www.goldmansachs.com/careers/">click here to know more</a></button>
+
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <img src="fb.jpg" style="width:100%">
+                <div class="text">
+                    <button class="link1"><a href="https://www.facebook.com/careers/">click here to know more</a></button>
+                </div>
+            </div>
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <hr class="divide1"><br>
+    <table class="hspt-table">
+        <tr>
+            <td rowspan="2">
+                <div class="formm">
+                    <form>
+                        <span class="intro">Fill the form below to register:</span><br />
+                        <label for="name">Name:</label>
+                        <input type="text" onblur="check_name()" id="name" name="name" placeholder="Your Name" required><br>
+                        <label id="name-field" style="color:red;display:none;">Name is a required field.</label><br>
+                        <label for="usn">USN:</label>
+                        <input type="text" onblur="return check_usn()" id="usn" name="usn" placeholder="USN" required><br>
+                        <label id="usn-field" style="color:red;display:none;">Please enter a valid USN.</label><br>
+                        <label for="email">Email:</label>
+                        <input type="email" onblur="return check_email()" id="email" name="email" placeholder="Email" required><br>
+                        <label id="email-field" style="color:red;display:none;">Please enter a valid email address of BMS College of Engineering.</label><br>
+                        <label for="phone">Contact Number:</label>
+                        <input type="number" onblur="return check_phone()" id="phone" name="phone" placeholder="Contact number" required><br>
+                        <label id="phone-field" style="color:red;display:none;">Please enter a valid 10 digit phone number.</label><br>
+                        <p class="form1">Choose the course/courses you want to Register in:</p>
+                        <input type="checkbox" id="ads" name="course" value="ads">
+                        <label for="course">ADVANCED DATA STRUCTURES AND ALGORITHMS</label><br>
+                        <input type="checkbox" id="android" name="course" value="android">
+                        <label for="course">ANDROID</label><br>
+                        <input type="checkbox" id="net" name="course" value="net">
+                        <label for="course">.NET</label><br>
+                        <input type="checkbox" id="php" name="course" value="php">
+                        <label for="course">PHP/MySQL</label><br>
+                        <input type="checkbox" id="adj" name="course" value="adj">
+                        <label for="course">ADVANCED JAVA</label><br>
+                        <input type="submit" onclick="return check_optionspl()" value="Submit">
+                    </form>
+                </div>
+            </td>
+            <td>
+                <table class="tablehs">
+                    <tr>
+                        <th>Objectives</th>
+                        <th>Methodology</th>
+                        <th>Duration</th>
+                    </tr>
+                    <tr>
+                        <td>Technical Training</td>
+                        <td>Specific Subjects opted by the students will be taught.</td>
+                        <td>10 hrs</td>
+                    </tr>
+                    <tr>
+                        <td>Interview and Resume Preparation</td>
+                        <td>Students will be guided to build and design a captivating resume and to face tough interview questions.</td>
+                        <td>7 hrs</td>
+                    </tr>
+                    <tr>
+                        <td>Aptitude Tests</td>
+                        <td>Regular MCQ based aptitude tests will be conducted to train the students.</td>
+                        <td>7 hrs</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form>
+                    <div class="helpsec">Help Section:</div>
+                    <textarea class="help" name="Help Section" placeholder="Type here if you have any queries..."></textarea>
+                    <input type="button" value="Submit Query" id="buttonq" onclick="return queryButton()">
+                    <label id="button1" style="color:black;display:none;">Your Query has been Recorded. We will get back to you shortly.</label>
+                </form>
+            </td>
+        </tr>
+    </table>
+    <footer>
+        <p class="copy">
+            &#xa9;
+            Copyright 2020. All Rights Reserved.
+        </p>
+    </footer>
+    </div>
+    <script type="text/javascript" src="Script1.js"></script>
+</body>
+</html>

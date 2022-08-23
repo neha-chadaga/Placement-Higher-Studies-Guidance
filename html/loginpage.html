@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="login-box">
+        <img src="avatar.png" class="logo">
+        <h2>WELCOME</h2>
+
+        <form action="HomePage.html" target="_blank">
+            <label for="email">Email:</label>
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <input type="email" id="email1" name="email1" placeholder="name.cs19@bmsce.ac.in" required><br>
+            <label for="pwd">Password:</label>
+            <i class="fa fa-key" aria-hidden="true"></i>
+            <input type="password" id="pwd" name="pwd" required><br>
+            <button class="LOGIN" onclick="Javascript:validateStudentDetails()">LOGIN</button>
+
+        </form>
+        <a href="studentsignup.html" target="_blank">Click here to signup as a student </a><br>
+        <a href="signupadmin.html" target="_blank">Click here to signup as an admin</a><br>
+        <a href="instructorsignup.html" target="_blank">Click here to signup as an instrutor</a><br>
+
+    </div>
+    <script src="Script1.js"></script>
+</body>
+</html>

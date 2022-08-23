@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Student-Sign Up page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="signup-box">
+        <img src="logo2.png" class="logo2">
+        <h2>WELCOME</h2>
+        <form action="./Home.html">
+            <label for="name">Name:</label>
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <input type="text" onblur="check_name()" id="name" name="name" required><br><br>
+            <label id="name-field1" style="color:red;display:none;">Enter a valid name</label><br>
+            <label for="usn">USN:</label>
+            <input type="text" onblur="return check_usn()" id="usn" placeholder="Ex: 1BM19CS001" required /><br><br>
+            <label id="usn-field" style="color:red;display:none;">Please enter a valid USN.</label><br>
+            <label for="email">Email:</label>
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <input type="email" id="email1" name="email1" placeholder="name.cs19@bmsce.ac.in" required><br><br>
+            <label for="pwd">Password:</label>
+            <i class="fa fa-key" aria-hidden="true"></i>
+            <input type="password" id="pwd" name="pwd" required><br><br>
+            <label for="pwdch">Confirm Password:</label>
+            <input type="password" id="pwdch" name="pwdch" required><br><br>
+            <button class="SIGN-UP" onclick="Javascript:validateStudentDetails()">SIGN UP</button>
+        </form>
+        <script src="Script1.js"></script>
+</body>
+</html>

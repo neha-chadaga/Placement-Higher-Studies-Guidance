@@ -1,0 +1,60 @@
+﻿!
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructor Sign Up </title>
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body class="background">
+    <div class="instructor-signup-box">
+        <img src="logo2.png" class="logo2">
+        <h2>WELCOME</h2>
+        <form action="./Admin-Instructor.html">
+            <label for="fname">FIRST NAME:</label><br>
+            <input type="text" onblur="return check_name()" id="fname" name="fname" placeholder="username" required><br>
+            <label id="name-field" style="color:red;display:none;">Enter a valid name.</label><br>
+            <label for="fusn"> USN:</label> <br>
+            <input type="usn" onblur="return check_usn()" id="fusn" name="fusn" placeholder="Ex:1BM19CS001" required><br>
+            <label id="usn-field1" style="color:red;display:none;">Please enter a valid USN.</label><br>
+            <label for="insemailemail">EMAIL:</label><br>
+            <input type="email" id="insemail" name="insemail" placeholder="Ex:name.cs19@bmsce.ac.in" required><br>
+            <label for="phno">PHONE NUMBER:</label><br>
+            <input type="tel" id="phno" name="phno" placeholder="Ex:1234567890" required><br>
+
+            <h4>COURSES YOU WOULD LIKE TO TEACH:</h4>
+            <p class="placement-training">
+                <h5>PLACEMENT TRAINING COURSES:</h5>
+                <input type="checkbox" name="DSA" id="DSA">
+                <label for="DSA">ADVANCED DATA STRUCTURES</label><br>
+                <input type="checkbox" name="ANDROID" id="ANDROID">
+                <label for="ANDROID">ANDROID COURSE</label><br>
+                <input type="checkbox" name="NET" id="NET">
+                <label for="NET">.NET COURSE</label><br>
+                <input type="checkbox" name="phpsql" id="phpsql">
+                <label for="phpsql">PHP/MySQL COURSE</label><br>
+                <input type="checkbox" name="adv java" id="adv java">
+                <label for="adv java">ADVANCED JAVA</label><br>
+            </p>
+
+            <h5>HIGHER STUDIES COURSES:</h5>
+            <input type="checkbox" name="gate" id="gate">
+            <label for="gate">GATE EXAM </label><br>
+            <input type="checkbox" name="gre" id="gre">
+            <label for="gre">GRE EXAM</label><br>
+            <input type="checkbox" name="toefl" id="toefl">
+            <label for="toefl">TOEFL EXAM</label><br>
+            <input type="checkbox" name="cat" id="cat">
+            <label for="cat">CAT EXAM</label><br>
+            <input type="checkbox" name="pgcet" id="pgcet">
+            <label for="pgcet">PGCET EXAM</label><br> <br>
+            <button class="Signup-instructor" onclick="Javascript:validateInstructorDetails()">SIGN UP</button>
+        </form>
+        <script src="Script1.js"></script>
+</body>
+
+</html>
