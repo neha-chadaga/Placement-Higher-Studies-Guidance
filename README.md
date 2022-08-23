@@ -5,7 +5,7 @@ A front end application where students can register for either placement trainin
 ## Screenshots
 <hr/>
 <p align="center">
-<img width="80%" src="screenshots/ss1.png"> <br><br> <img width="80%" src="screenshots/ss2.png"> <br>,br> <img width="80%" src="screenshots/ss3.png">
+<img width="80%" src="screenshots/ss1.png"> <br><br> <img width="80%" src="screenshots/ss2.png"> <br><br> <img width="80%" src="screenshots/ss4.png"><br><br><img width="80%" src="screenshots/ss3.png">
 </p>
 
 ### Clone this repository
